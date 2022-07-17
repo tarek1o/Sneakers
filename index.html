@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneakers</title>
+    <link rel="shortcut icon" type="image" href="imgs/logo.svg">
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="CSS/normalize.css"/>
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="CSS/all.min.css"/>
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="CSS/e-commerce.css"/>
+    
+</head>
+<body>
+    <div class="landing">
+        <header>
+            <div class="container">
+                <div class="logo">
+                    <a href="#"><img src="imgs/logo.svg" alt=""></a>
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <nav>
+                    <i class="fa-solid fa-xmark"></i>
+                    <ul>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li class="active"><a href="#">Women</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="profile">
+                    <div class="market-car">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <div class="adding">
+                            <span>Cart</span>
+                            <div class="content"></div>
+                        </div>
+                    </div>
+                    <div class="avatar">
+                        <img src="imgs/image-avatar.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="collections">
+            <div class="container">
+                <div class="product">
+                    <div class="photo-player">
+                        <i class="fa-solid fa-angle-left"></i>
+                        <div class="imgs">
+                            <img src="imgs/image-product-1.jpg" alt="" class="active" id="p-1">
+                            <img src="imgs/image-product-2.jpg" alt="" id="p-2">
+                            <img src="imgs/image-product-3.jpg" alt="" id="p-3">
+                            <img src="imgs/image-product-4.jpg" alt="" id="p-4">
+                        </div>
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="slider">
+                        <div class="active" data-photo = "p-1">
+                            <img src="imgs/image-product-1-thumbnail.jpg" alt="" draggable="false">
+                        </div>
+                        <div data-photo = "p-2">
+                            <img src="imgs/image-product-2-thumbnail.jpg" alt="" draggable="false">
+                        </div>
+                        <div data-photo = "p-3">
+                            <img src="imgs/image-product-3-thumbnail.jpg" alt="" draggable="false">
+                        </div>
+                        <div data-photo = "p-4">
+                            <img src="imgs/image-product-4-thumbnail.jpg" alt="" draggable="false">
+                        </div>
+                    </div>
+                </div>
+                <div class="info">
+                    <span>Sneaker Company</span>
+                    <h1 class="product-title"><span>Fall Limited Edition</span> Sneakers</h1>
+                    <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they'll withstand everything the weather can offer.</p>
+                    <div class="price">
+                        <div class="sale">
+                            <h3 class="final-price">$<span>125.00</span></h3>
+                            <span>50%</span>
+                        </div>
+                        <del class="before-sale">$250.00</del>
+                    </div>
+                    <div class="add-to-cart">
+                        <div class="controls">
+                            <i class="fa-solid fa-minus"></i>
+                            <span class="number"></span>
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                        <button>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
